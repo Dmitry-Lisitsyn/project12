@@ -13,12 +13,9 @@ export class ChangeComponent implements OnInit {
   @Input() worker: MyWorker;
   @Output() changeWorker = new EventEmitter<MyWorker>();
 
-
-
-
-
-
   myWorkerType = MyWorkerType;
+
+/////////////////////////////////
 
   formChanger = new FormGroup({
     firstName: new FormControl()
@@ -42,13 +39,7 @@ export class ChangeComponent implements OnInit {
         
       })
 
-    // this.formChanger.patchValue({
-
-    //   name: this.worker.name,
-    //   surname: this.worker.surname,
-    //   type: this.worker.type
-
-    // });
+   
   }
   change_worker() {
 
